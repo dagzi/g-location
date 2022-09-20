@@ -20,14 +20,10 @@ pipeline {
                 sh 'test'
             }
         }
-         stage('build') {
-            steps {
-                echo 'build'
-            }
-        }
+         
          stage('deploy') {
             steps {
-                echo ' deploy'
+                echo ' deployment'
             }
         }
     }
